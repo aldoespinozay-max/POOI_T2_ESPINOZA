@@ -1,0 +1,51 @@
+﻿@model POOI_T2_ESPINOZA.Models.Alumno
+
+@{
+    ViewBag.Title = "Actualizar";
+}
+
+<h2>Actualizar Alumno</h2>
+
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        @Html.LabelFor(model => model.dni)
+        @Html.TextBoxFor(model => model.dni, new { @class = "form-control", @readonly = "readonly" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.nombres)
+        @Html.TextBoxFor(model => model.nombres, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.apellidos)
+        @Html.TextBoxFor(model => model.apellidos, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.carrera)
+        @Html.TextBoxFor(model => model.carrera, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.ciclo)
+        @Html.TextBoxFor(model => model.ciclo, new { @class = "form-control" })
+    </div>
+
+    <br />
+
+    <input type="submit" value="Actualizar" class="btn btn-primary" />
+}
+
+@if (ViewBag.Mensaje != null)
+{
+    <br />
+    <div class="alert alert-info">
+        @ViewBag.Mensaje
+    </div>
+}
+
+<p>
+    @Html.ActionLink("Regresar", "Index")
+</p>

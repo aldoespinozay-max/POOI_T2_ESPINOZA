@@ -1,0 +1,23 @@
+[
+  {
+    "dni": "77664696",
+    "nombres": "Aldo Raúl",
+    "apellidos": "Espinoza",
+    "carrera": "Sistemas",
+    "ciclo": 3
+  },
+  {
+    "dni": "99999999",
+    "nombres": "Belen",
+    "apellidos": "Aragon",
+    "carrera": "Administracion",
+    "ciclo": 10
+  },
+  {
+    "dni": "88888888",
+    "nombres": "Giancarlos",
+    "apellidos": "Arce",
+    "carrera": "Sistemas",
+    "ciclo": 5
+  }
+]
